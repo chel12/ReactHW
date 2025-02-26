@@ -1,0 +1,37 @@
+.info-block {
+	padding-top: 120px;
+	padding-bottom: 300px;
+	&__content {
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__block-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	&__title {
+		margin-bottom: 20px;
+		h3 {
+			font-family: $RFDewi;
+			font-size: 48px;
+			line-height: 52.8px;
+			font-weight: 800;
+		}
+	}
+	&__description {
+		display: flex;
+		justify-content: center;
+		width: 738px;
+		margin-bottom: 20px;
+		p {
+			font-family: $Inter;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+}

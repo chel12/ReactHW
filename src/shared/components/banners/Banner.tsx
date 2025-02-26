@@ -12,8 +12,6 @@ export const Banner: React.FC<BackgroundProps> = ({
 	type,
 	src,
 	title,
-	className,
-	description,
 }): React.JSX.Element => {
 	const [isPlaying, setIsPlaying] = React.useState(true);
 	const videoRef = useRef<HTMLVideoElement>(null);

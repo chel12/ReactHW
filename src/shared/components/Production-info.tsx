@@ -2,9 +2,6 @@ import React from 'react';
 import { Banner } from './banners/Banner';
 import { Card } from './cards/Card';
 
-interface Props {
-	className?: string;
-}
 const services = [
 	{
 		id: '1',
@@ -28,7 +25,7 @@ const services = [
 			'Поможем разработать линейку одежды для вашего бренда, от пошива до реализации.',
 	},
 ];
-export const ProductionInfo: React.FC<Props> = ({ className }) => {
+export const ProductionInfo: React.FC = () => {
 	return (
 		<section className="production-info">
 			<div className="production-info__header">

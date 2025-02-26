@@ -45,7 +45,7 @@ export const Header: React.FC<Props> = (): JSX.Element => {
 			</nav>
 			<div className="header-title">
 				<div className="container">
-					<div className="header-title__inner">
+					<div className="header-title__inner-title">
 						<span className="header-title__span">
 							Сделано <br /> в Санкт-Петербурге
 						</span>

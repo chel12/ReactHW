@@ -1,5 +1,7 @@
 .header {
-	padding: 0 40px;
+	
+	width: 100%;
+	height: 100%;
 	min-height: 677px;
 	background-image: url('img/header.png');
 	background-repeat: no-repeat;
@@ -7,71 +9,120 @@
 	background-position: center;
 	background-color: rgba(0, 0, 0, 0.4);
 	background-blend-mode: overlay;
+	background-size: cover;
+
+	
 }
 .header-nav {
+	padding: 15px;
 	&__inner {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	padding: 15px;
+
 	&__list {
 		display: flex;
 		justify-content: space-around;
 		flex-grow: 1;
+		@media (max-width: 600px) {
+			position: relative;
+		}
 	}
 	&__item {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
+		@media (max-width: 600px) {
+			&:nth-child(1) {
+				position: absolute;
+				left: 10px;
+				top: 600px;
+			}
+			&:nth-child(3) {
+				position: absolute;
+				right: 10px;
+				top: 600px;
+			}
+		}
 	}
 	&__link {
 		color: $white;
 		font-size: 14px;
 		line-height: 16.8px;
-		font-family: 'RFDewi';
+		font-family: $RFDewi;
 		font-weight: 800;
 		text-transform: uppercase;
 		&--big {
 			font-size: 24px;
 			text-transform: uppercase;
 		}
+		@media (max-width: 600px) {
+		}
 	}
 	&__span {
+		margin-top: 10px;
 		color: $white;
 		&--big {
 			text-transform: uppercase;
 		}
 	}
 }
+
 .header-title {
-	margin-top: 120px;
+	margin-top: 20px;
 	&__inner {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
 	}
+	&__inner-title {
+		margin-top: 10%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		@media (max-width: 600px) {
+			margin-top: 30%;
+		}
+	}
 	&__span {
 		color: $white;
 		text-align: center;
-		font-family: 'RFDewi';
+		font-family: $RFDewi;
 		font-weight: 800;
 		font-size: 60px;
 		line-height: 72px;
 		margin-bottom: 30px;
+		@media (max-width: 600px) {
+			font-size: 35px;
+			line-height: 42px;
+		}
 	}
 	&__button {
+		cursor: pointer;
 		border: none;
 		width: 265px;
 		height: 64px;
-		font-family: 'RFDewi';
+		font-family: $RFDewi;
 		font-weight: 800;
 		font-size: 16px;
 		line-height: 19.2px;
 		border-radius: 10px;
 		padding: 22px 35px;
 		background-color: $yallow;
+		transition: all 0.6s ease;
+		&:hover {
+			background-color: black;
+			color: $yallow;
+		}
+		@media (max-width: 599px) {
+			font-size: 14px;
+			line-height: 16.8px;
+			width: 220px;
+			height: 55px;
+		}
 	}
 }

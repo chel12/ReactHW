@@ -1,0 +1,88 @@
+.header {
+	padding: 0 40px;
+	height: auto;
+	background-image: url('img/header.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: overlay;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		height: 677px;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.content {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: stretch;
+		max-width: 1200px;
+	}
+}
+.header-nav {
+	margin-top: 30px;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	&__link {
+		color: $white;
+		font-size: 14px;
+		line-height: 16.8px;
+		font-family: 'RFDewi';
+		font-weight: 800;
+		text-transform: uppercase;
+		&--big {
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+	}
+	&__span {
+		color: $white;
+		&--big {
+			text-transform: uppercase;
+		}
+	}
+}
+.header-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 133px;
+
+	&__span {
+		color: $white;
+		text-align: center;
+		font-family: 'RFDewi';
+		font-weight: 800;
+		font-size: 60px;
+		line-height: 72px;
+		margin-bottom: 30px;
+	}
+	&__button {
+		border: none;
+		width: 265px;
+		height: 64px;
+		font-family: 'RFDewi';
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 19.2px;
+		border-radius: 10px;
+		padding: 22px 35px;
+		background-color: $yallow;
+	}
+}

@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-style: normal;
+	src: local('Inter'), url('fonts/Inter/Inter.woff2') format('woff2'),
+		url('fonts/Inter/Inter.woff') format('woff'),
+		url('fonts/Inter/Inter.eot') format('eot');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-style: italic;
+	src: local('Inter'), url('fonts/Inter/Inter-Italic.woff2') format('woff2'),
+		url('fonts/Inter/Inter-Italic.woff') format('woff'),
+		url('fonts/Inter/Inter-Italic.eot') format('eot');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'RFDewi';
+	font-weight: 400;
+	font-style: normal;
+	src: local('RFDewi'), url('fonts/RFDewi/RFDewi-Regular.ttf') format('ttf'),
+		url('fonts/RFDewi/RFDewi-Regular.woff') format('woff'),
+		url('fonts/RFDewi/RFDewi-Regular.eot') format('eot');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'RFDewi';
+	font-weight: 300;
+	font-style: normal;
+	src: local('RFDewi'), url('fonts/RFDewi/RFDewi-Light.ttf') format('ttf'),
+		url('fonts/RFDewi/RFDewi-Light.woff') format('woff'),
+		url('fonts/RFDewi/RFDewi-Light.eot') format('eot');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'RFDewi';
+	font-weight: 800;
+	font-style: normal;
+	src: local('RFDewi'), url('fonts/RFDewi/RFDewi-Bold.ttf') format('ttf'),
+		url('fonts/RFDewi/RFDewi-Bold.woff') format('woff'),
+		url('fonts/RFDewi/RFDewi-Bold.eot') format('eot');
+	font-display: swap;
+}

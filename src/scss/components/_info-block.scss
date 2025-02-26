@@ -1,11 +1,18 @@
 .info-block {
 	padding-top: 120px;
 	padding-bottom: 300px;
+	@media (max-width: 600px) {
+		padding-top: 57px;
+		padding-bottom: 200px;
+	}
 	&__content {
 		padding: 10px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		@media (max-width: 600px) {
+			padding: 0;
+		}
 		&__iner {
 			display: flex;
 		}
@@ -23,13 +30,18 @@
 			font-size: 48px;
 			line-height: 52.8px;
 			font-weight: 800;
+			@media (max-width: 600px) {
+				font-size: 30px;
+				line-height: 33px;
+			}
 		}
 	}
 	&__description {
 		display: flex;
 		justify-content: center;
-		width: 738px;
+		max-width: 738px;
 		margin-bottom: 20px;
+
 		p {
 			font-family: $Inter;
 			font-weight: 400;

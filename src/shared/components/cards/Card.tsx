@@ -9,9 +9,15 @@ interface Props {
 
 export const Card: React.FC<Props> = ({ title, price, image, description }) => {
 	return (
-		<div className="card">
+		<div className={description ? 'desc' : 'info'}>
 			<div className="card-content">
-				<img src={`${image}`} alt="" />
+				<img
+					className={
+						description ? 'description-image' : 'price-image'
+					}
+					src={`${image}`}
+					alt=""
+				/>
 
 				{description && (
 					<div className="card-description">

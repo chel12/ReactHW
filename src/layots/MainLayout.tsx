@@ -1,16 +1,13 @@
 import React from 'react';
-import { Header } from '../shared/components/Header';
-import { Price } from '../pages/Price';
 
-export const MainLayout: React.FC = () => {
+interface Props {
+	children: React.ReactNode;
+}
+
+export const MainLayout: React.FC<Props> = ({ children }): React.ReactNode => {
 	return (
 		<>
-			<Header />
-			<div className="wrapper">
-				<div className="container">
-					<Price />
-				</div>
-			</div>
+			<div className="wrapper">{children}</div>
 		</>
 	);
 };

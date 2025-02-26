@@ -7,9 +7,9 @@ interface Props {
 export const Header: React.FC<Props> = (): JSX.Element => {
 	return (
 		<header className="header">
-			<div className="container">
-				<div className="content">
-					<nav className="header-nav">
+			<nav className="header-nav">
+				<div className="container">
+					<div className="header-nav__inner">
 						<ul className="header-nav__list">
 							<li className="header-nav__item">
 								<a
@@ -40,12 +40,15 @@ export const Header: React.FC<Props> = (): JSX.Element => {
 								</span>
 							</li>
 						</ul>
-					</nav>
-					<div className="header-title">
+					</div>
+				</div>
+			</nav>
+			<div className="header-title">
+				<div className="container">
+					<div className="header-title__inner">
 						<span className="header-title__span">
 							Сделано <br /> в Санкт-Петербурге
 						</span>
-
 						<button className="header-title__button btn">
 							Отправить запрос
 						</button>

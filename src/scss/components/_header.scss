@@ -1,36 +1,24 @@
 .header {
 	padding: 0 40px;
-	height: auto;
+	min-height: 677px;
 	background-image: url('img/header.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center;
 	background-color: rgba(0, 0, 0, 0.4);
 	background-blend-mode: overlay;
-
-	.container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-between;
-		height: 677px;
-		max-width: 1200px;
-		margin: 0 auto;
-	}
-	.content {
-		padding: 0;
-		display: flex;
-		flex-direction: column;
-		align-content: center;
-		justify-content: stretch;
-		max-width: 1200px;
-	}
 }
 .header-nav {
-	margin-top: 30px;
-	&__list {
+	&__inner {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+	}
+	padding: 15px;
+	&__list {
+		display: flex;
+		justify-content: space-around;
+		flex-grow: 1;
 	}
 	&__item {
 		display: flex;
@@ -58,12 +46,13 @@
 	}
 }
 .header-title {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	margin-top: 133px;
-
+	margin-top: 120px;
+	&__inner {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
 	&__span {
 		color: $white;
 		text-align: center;

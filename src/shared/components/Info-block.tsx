@@ -1,9 +1,6 @@
 import React from 'react';
 import { Card } from './cards/Card';
 
-interface Props {
-	className?: string;
-}
 const categories = [
 	{ id: '1', img: '/public/img/item1.png', title: 'Худи', price: '1650' },
 	{ id: '2', img: '/public/img/item2.png', title: 'Футболки', price: '510' },
@@ -12,7 +9,7 @@ const categories = [
 	{ id: '5', img: '/public/img/item5.png', title: 'Шопперы', price: '330' },
 	{ id: '6', img: '/public/img/item6.png', title: 'Кепки', price: '400' },
 ];
-export const InfoBlock: React.FC<Props> = ({ className }) => {
+export const InfoBlock: React.FC = (): React.ReactNode => {
 	return (
 		<section className="info-block">
 			<div className="info-block__top">

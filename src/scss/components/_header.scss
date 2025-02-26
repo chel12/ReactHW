@@ -63,6 +63,7 @@
 		margin-bottom: 30px;
 	}
 	&__button {
+		cursor: pointer;
 		border: none;
 		width: 265px;
 		height: 64px;
@@ -73,5 +74,10 @@
 		border-radius: 10px;
 		padding: 22px 35px;
 		background-color: $yallow;
+		transition: all 0.6s ease;
+		&:hover {
+			background-color: black;
+			color: $yallow;
+		}
 	}
 }

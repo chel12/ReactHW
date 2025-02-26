@@ -6,6 +6,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		&__iner {
+			display: flex;
+		}
 	}
 	&__block-inner {
 		display: flex;
